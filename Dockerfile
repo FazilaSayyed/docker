@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-Label DEVOPSENGG="FAZILA"
+LABEL DEVOPSENGG="FAZILA"
 
 RUN apt update
 
@@ -10,8 +10,8 @@ RUN rm -rf /var/www/html/index.html
 
 WORKDIR /var/www/html
 
-copy oxer-html /var/www/html
+COPY oxer-html /var/www/html
 
-Expose 80
+EXPOSE 80
 
 CMD ["apachectl , "D" , "FOREGROUND"]
