@@ -14,4 +14,4 @@ COPY oxer-html /var/www/html
 
 EXPOSE 80
 
-CMD ["apachectl , "D" , "FOREGROUND"]
+CMD ["apachectl" , "-D" , "FOREGROUND"]
