@@ -10,7 +10,7 @@ RUN rm -rf /var/www/html/index.html
 
 WORKDIR /var/www/html
 
-COPY oxer.zip .
+COPY https://github.com/FazilaSayyed/docker/blob/main/Oxer%20Free%20Website%20Template%20-%20Free-CSS.com.zip .
  
 RUN unzip oxer.zip
 
