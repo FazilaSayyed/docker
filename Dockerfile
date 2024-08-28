@@ -10,7 +10,11 @@ RUN rm -rf /var/www/html/index.html
 
 WORKDIR /var/www/html
 
-COPY oxer-html /var/www/html
+COPY oxer.zip .
+ 
+RUN unzip oxer.zip
+
+RUN mv oxer/* .
 
 EXPOSE 80
 
